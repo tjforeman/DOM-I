@@ -48,7 +48,7 @@ navigation[1].textContent= siteContent['nav']['nav-item-2'];
 navigation[2].textContent= siteContent['nav']['nav-item-3'];
 navigation[3].textContent= siteContent['nav']['nav-item-4'];
 navigation[4].textContent= siteContent['nav']['nav-item-5'];
-navigation[5].textContent= siteContent['nav']['nav-item-6'];
+navigation[5].textContent= siteContent['nav']['nav-item-6']; 
 // select the h1 
 let ctaTxt= document.querySelector('.cta h1');
 ctaTxt.textContent=siteContent['cta']['h1'];
@@ -88,3 +88,24 @@ contactContent[2].textContent=siteContent['contact']['email'];
 // footer
 let copys=document.querySelector('footer p');
 copys.textContent=siteContent['footer']['copyright'];
+// change text green 
+navigation.forEach(currentValue=>{
+currentValue.style.color="green"
+})
+// add 2 nav items
+
+const newA=document.createElement('a');
+
+newA.textContent="Learn more";
+const nav1=document.querySelector('nav');
+newA.style.color="green";
+nav1.append(newA);
+
+// button 2 
+const firstA=document.createElement('a');
+
+firstA.textContent="Great Idea";
+const navs=document.querySelector('nav');
+firstA.style.color="green";
+navs.prepend(firstA);
+
