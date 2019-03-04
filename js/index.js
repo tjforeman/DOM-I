@@ -85,3 +85,6 @@ let contactContent=document.querySelectorAll('.contact p');
 contactContent[0].textContent=siteContent['contact']['address'];
 contactContent[1].textContent=siteContent['contact']['phone'];
 contactContent[2].textContent=siteContent['contact']['email'];
+// footer
+let copys=document.querySelector('footer p');
+copys.textContent=siteContent['footer']['copyright'];
