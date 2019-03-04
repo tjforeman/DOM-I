@@ -40,3 +40,21 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+//select the anchors 
+let navigation = document.querySelectorAll('a');
+//select each item in anchor and link it to text content 
+navigation[0].textContent= siteContent['nav']['nav-item-1'];
+navigation[1].textContent= siteContent['nav']['nav-item-2'];
+navigation[2].textContent= siteContent['nav']['nav-item-3'];
+navigation[3].textContent= siteContent['nav']['nav-item-4'];
+navigation[4].textContent= siteContent['nav']['nav-item-5'];
+navigation[5].textContent= siteContent['nav']['nav-item-6'];
+// select the h1 
+let ctaTxt= document.querySelector('.cta h1');
+ctaTxt.textContent=siteContent['cta']['h1'];
+// select the button
+let ctaBtn=document.querySelector('.cta button');
+ctaBtn.textContent=siteContent['cta']['button'];
+//select the image
+let ctaImg=document.getElementById("cta-img")
+ctaImg.setAttribute('src',siteContent['cta']['img-src'])
