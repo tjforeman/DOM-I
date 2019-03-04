@@ -56,5 +56,22 @@ ctaTxt.textContent=siteContent['cta']['h1'];
 let ctaBtn=document.querySelector('.cta button');
 ctaBtn.textContent=siteContent['cta']['button'];
 //select the image
-let ctaImg=document.getElementById("cta-img")
-ctaImg.setAttribute('src',siteContent['cta']['img-src'])
+let ctaImg=document.getElementById("cta-img");
+ctaImg.setAttribute('src',siteContent['cta']['img-src']);
+//main-content
+//select h4
+let mainH4=document.querySelectorAll('.main-content h4');
+mainH4[0].textContent=siteContent['main-content']['features-h4'];
+mainH4[1].textContent=siteContent['main-content']['about-h4'];
+mainH4[2].textContent=siteContent['main-content']['services-h4'];
+mainH4[3].textContent=siteContent['main-content']['product-h4'];
+mainH4[4].textContent=siteContent['main-content']['vision-h4'];
+//select p tags
+let mainP=document.querySelectorAll('.main-content p');
+mainP[0].textContent=siteContent['main-content']['features-content'];
+mainP[1].textContent=siteContent['main-content']['about-content'];
+mainP[2].textContent=siteContent['main-content']['services-content'];
+mainP[3].textContent=siteContent['main-content']['product-content'];
+mainP[4].textContent=siteContent['main-content']['vision-content'];
+let mainImg=document.getElementById('middle-img');
+mainImg.setAttribute('src',siteContent['main-content']['middle-img-src'])
